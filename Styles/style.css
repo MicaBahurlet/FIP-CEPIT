@@ -1,3 +1,18 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#about {
+    padding: 20px;
+    width:100%;
+    height: auto;
+    max-width: 800px;
+
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -28,8 +43,3 @@ a {
     color: white;
 }
 
-#about {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-}
