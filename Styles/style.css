@@ -43,3 +43,83 @@ a {
     color: white;
 }
 
+/*----------------- product list------------------*/
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.5%;
+}
+
+.imgProduct {
+    width: 90%;
+    background-color: #b57edc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-product {
+    position: relative;
+    width: 33%;
+    height: auto;
+    align-items: center;
+    margin-bottom: 2.5%;
+    overflow: hidden;
+}
+
+.car-product:hover img,
+.car-product:hover h3,
+.car-product:hover p {
+    transition: opacity 0.5s ease;
+    opacity: 0.4;
+}
+
+.nameProduct {
+    color: #4b1c71;
+    font-weight: bold;
+}
+
+/*Button buy*/
+
+.buy-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: violet;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.car-product:hover .buy-btn {
+    opacity: 1;
+}
+
+/*Button see more*/
+
+.see-more {
+    background-color: violet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 95%;
+    height: 50px;
+    display: block;
+    margin: auto;
+    margin-bottom: 2.5%;
+}
+  
+.see-more:hover {
+    background-color: #b57edc;
+}

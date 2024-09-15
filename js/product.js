@@ -11,16 +11,24 @@ const product = [{
     price: "90",
 },
 {
-    fig: "images/images/Pringles-Ranch.png",
-    nameProduct: "Café Bonafide",
+    fig: "images/Pringles-Ranch.png",
+    nameProduct: "Papitas Pringles",
     price: "49.99",
-    stock: "11",
 },
 {
-    fig: "images/images/Haribo-Berries-Candies.png",
-    nameProduct: "Mermelada de ciruela Arcor",
+    fig: "images/Haribo-Berries-Candies.png",
+    nameProduct: "Gomitas Haribo",
     price: "54.99",
-    stock: "11",
+},
+{
+    fig: "images/oreo-cookies.png",
+    nameProduct: "Galletitas Oreo",
+    price: "49.99",
+},
+{
+    fig: "images/Caramel-cookie-Tita.png",
+    nameProduct: "Alfajor Tita",
+    price: "54.99",
 },
 ];
 
@@ -41,11 +49,17 @@ function createListProduct(product) {
         p.classList.add('price');
         p.textContent = `$${item.price}`;
 
+        const buyButton = document.createElement('button');
+        buyButton.classList.add('buy-btn');
+        buyButton.textContent = 'Comprar';
+
         const carProductDiv = document.createElement('div');
         carProductDiv.classList.add('car-product');
         carProductDiv.appendChild(img);
         carProductDiv.appendChild(h3);
         carProductDiv.appendChild(p);
+        carProductDiv.appendChild(buyButton);
         productsContainer.appendChild(carProductDiv);
     });
 }
+createListProduct(product);
