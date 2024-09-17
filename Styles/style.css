@@ -76,11 +76,11 @@ a {
 }
 
 .imgProduct {
-    width: 60%;
+    width: 80%;
     background-color: #b57edc;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
